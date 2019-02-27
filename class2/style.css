@@ -1,8 +1,91 @@
-.container{
-    background-color: salmon;
+@charset "UTF-8";
+/* CSS Document */
+
+/* General styles */
+
+#wrapper {margin: 0 auto; max-width: 100%;}
+
+header {height: 259px; width: auto; opacity: 0.8;}
+#background img {height: 259px;}
+#logo {height: 83px; width: auto; background-color:ghostwhite; opacity: 0.8; float: left; margin-top: 15px;}
+#logo img {height: auto; width: 450px;}
+
+
+
+
+/*mobile styles*/
+ul {list-style-type: none; text-align: left; margin-top: 10px; margin-right: 0px; float: left;}
+a {font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; font-size: 18px; color: #515f6b; font-weight: lighter; text-decoration-line: none; text-transform: uppercase; vertical-align: 50%; } 
+a:hover {text-decoration-line: none; color: #b0aa7e}
+a:active {text-decoration: none; color:#b0aa7e;}
+h1 {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 12px; font-style: normal; font-weight: bold; color: #253746}
+h2 {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 22px; font-style: normal; font-weight: 400; color: #515f6b}
+h3 {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 20px; font-style: normal; font-weight: 300; color: #7c8790; line-height: 1px;}
+h6 {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 12px; font-style: normal;font-weight: 200; color: #515f6b}
+p {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-style: normal; font-weight: 200; color: #253746 }
+
+
+nav {float:left; width:382px;}
+#content {height: 100%;}
+
+#footer {left: 0px; bottom: 0px;}
+a
+/*about us page*/
+.text_areas {
+	margin-top: 40px;
+	margin-right: 0px;
+	float: left;
 }
-@media(min-width: 768px;){
-    .container{
-        background-color: darkblue;
+.group_photo {
+	max-width: 40px;
+	margin-right: 0px;
+	float: right;
+}
+
+/*team page*/
+
+.team_member {
+	width:160px; 
+	height:188px;
+	background-color:#e8cdcd; 
+	margin-top: 60px;
+	margin-right: 50px;
+	float: left;
+	
+}
+.desc {
+	width:160px; 
+	height:69px; 
+	float: left;
+	margin-top: 2px;
+	margin-right: 1px;
+}
+
+
+/*tablets and desktop*/
+@media (min-width: 768px){
+
+    nav {float:left;width:260px;}
+    #content { height: 490px;}
+    .active {
+    background-color: #4CAF50;
     }
+}
+
+	
+.vl {
+  	border-left: 1px solid #B0AA7E;
+  	height: 300px;
+  	float: left;
+	margin-top: 70px;
+	margin-left: 20px;
+	
+}
+@media(min-width: 992px){
+
+    nav {float:left;width:260px;}
+    #content { height: 490px;}
+    .active {
+      background-color: #4CAF50;
     }
+}
