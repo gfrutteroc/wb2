@@ -1,0 +1,24 @@
+img {
+    width: 100%
+
+}
+h1 {
+    margin: 0 auto;
+}
+
+.vertCenter1 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    margin: 0px;
+    text-align: justify;
+}
+
+.Lorem1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px; /* MARGINS affect the centering in this method! */
