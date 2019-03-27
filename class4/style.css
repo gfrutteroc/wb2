@@ -1,0 +1,25 @@
+.content {
+    padding: 0px 10px;
+    min-height: 500px;
+    border-bottom: 2px solid red;
+    position: relative;
+
+}
+.content .image {
+    min-height: 200px;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+.content .abs-pos{
+    position:absolute;
+}
+
+#SuperMan {
+    top: 30px;
+}
+#SuperText {
+    
+}

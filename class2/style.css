@@ -62,14 +62,28 @@ a
 }
 
 
-/*tablets and desktop*/
-@media (min-width: 768px){
 
-    nav {float:left;width:260px;}
-    #content { height: 490px;}
-    .active {
-    background-color: #4CAF50;
-    }
+
+/*tablets and desktop*/
+@media (min-width: 768px)
+
+	
+{
+	
+ul {list-style-type: none; text-align: right; margin-top: 130px; margin-right: 5px; float: left;}
+a {font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; font-size: 22px; color: #515f6b; font-weight: lighter; text-decoration-line: none; text-transform: uppercase; vertical-align: 100%; } 
+a:hover {text-decoration-line: none; color: #b0aa7e}
+	a:active {background-color: aqua;}
+h1 {font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; font-size: 34px; font-style: normal; font-weight: 200; color: #253746}
+h2 {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 20px; font-style: normal; font-weight: normal; color: #515f6b;} 
+h3 {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 16px; font-style: normal; font-weight: lighter; color: #7c8790; line-height: 1px;}
+h6 {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-size: 12px; font-style: normal;font-weight: 400; color: #515f6b; text-align: right;}
+p {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; font-style: normal; font-weight: 200; color: #253746; font-size: 20px }
+
+nav {float:left;width:260px;}
+#content { height: 490px;}
+.active {
+  background-color: #4CAF50;
 }
 
 	
@@ -81,11 +95,126 @@ a
 	margin-left: 20px;
 	
 }
-@media(min-width: 992px){
 
-    nav {float:left;width:260px;}
-    #content { height: 490px;}
-    .active {
-      background-color: #4CAF50;
-    }
+
+#footer {left: 0px; bottom: 0px; clear: both; margin-top: 10px;}
+	
+.title {
+	width: 300px;
+	height: 0px;
+	float: right;
+	text-align: right;
+	margin-right: 35px;
+	margin-top: 1px;
+	}
+
+/*about us page*/
+.text_areas {
+	width: 500px;
+	height: 257px;
+	margin-top: 100px;
+	margin-right: 12px;
+	float: left;
+	text-align: justify;
 }
+
+.group_photo {
+	margin-top: 60px;
+	margin-right: 100px;
+	float: right;
+	}
+
+/*team page*/
+
+.team_member {
+	width:160px; 
+	height:188px;
+	background-color:#e8cdcd; 
+	margin-top: 120px;
+	margin-right: 15px;
+	float: left;
+	
+}
+.desc {
+	width:160px; 
+	height:69px;  
+	float: left;
+	margin-top: 1px;
+
+	
+}
+
+
+
+
+/*area page*/
+	
+.practice_areas_left {
+	width: 500px;
+	margin-top: 100px;
+	margin-right: 80px;
+	text-align: justify;
+	float: left;
+}
+
+
+/*contact page*/
+	
+	.contact_box {
+		width: 690px;
+		margin-top: 100px;
+		margin-right: 200px;
+		width: 200px;
+		float: left;
+		
+	}
+
+	input[type=text] 
+	{width: 300px;
+	padding: 12px 20px;
+	margin-top: 10px;
+	margin-right: 12px;
+	border:none;
+	border-bottom: 1px solid #B0AA7E;
+
+	}
+	
+	textarea{
+		width: 500px;
+		padding: 12px 20px;
+		margin-top: 10px;
+		border:none;
+		border-bottom: 1px solid #B0AA7E;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

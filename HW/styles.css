@@ -10,9 +10,12 @@ a{
     text-decoration: none;
     padding: 0px 30px;
 }
-div{
+#toggle{
   width: 35px;
   height: 5px;
   background-color: black;
   margin: 6px 0;
+}
+body {
+    width: 100%;
 }

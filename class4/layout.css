@@ -1,9 +1,14 @@
-.header {
-    background-color: #175676;
-    height: 40px;
-    padding-top: 10px;
-}
 
+.red {background-color: brown;
+}
+.green {background-color: green;
+}
+.blue {background-color: blue;
+}
+.container {
+    margin:auto;
+    background-color: blue;
+}
 .floater-section{
     float: left;
     widows: 100%;
@@ -30,13 +35,6 @@
     .small-width-100{
         width: 100%;
     }
-    a{
-        display: none;
-    }
-    #toggle {
-        display: none;
-    }
-
 }
 
 @media (min-width: 768px){
@@ -57,10 +55,6 @@
     }
     .med-width-100{
         width: 100%;
-    }
-    
-    #toggle{
-        display: none;
     }
 
 }
@@ -83,5 +77,6 @@
     .large-width-100{
         width: 100%;
     }
-       
+    
+    
 }
