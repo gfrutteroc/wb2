@@ -137,7 +137,7 @@ h3 {
 }
 h6 {
 	font-family: 'Khula';
-	font-size: 14px; 
+	font-size: 12px; 
 	font-style: normal;
 	font-weight: 200; 
     color: #515f6b;
@@ -192,6 +192,7 @@ label{
 
 #footer h6{
 	float: right;
+	font-size: 14px;
 }
 .vl {
 	border-right: 1px solid #B0AA7E;
