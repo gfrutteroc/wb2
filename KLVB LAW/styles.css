@@ -152,6 +152,7 @@ p {
 }
 .partner-desc p{
 	font-size: small;
+	text-align: left;
 }
 #footer {
 	clear: both; 
@@ -186,7 +187,7 @@ label{
 	display: none;
 }
 .active {
-	color: #b0aa7e;
+	color: #B0AA7E;
 }
 
 #footer h6{
