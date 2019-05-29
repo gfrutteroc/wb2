@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javascript 2</title>
+    <style>
+    #logo{ 
+        width: 150px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="http://gnosticwarrior.com/wp-content/uploads/2015/03/symbol-Pepsi.jpg" alt="brand logo">
+    </header>
+    <main>
+        <div class="buttons">
+            <button id="logoSwitch"> Switch the logo</button>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script>
+        var switchLogo = function (){
+            var imgCurrentSrc = document.getElementById('logo').src;
+            
+            var src1 = "http://gnosticwarrior.com/wp-content/uploads/2015/03/symbol-Pepsi.jpg"
+            var src2 = "https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Pepsi_logo.svg/220px-Pepsi_logo.svg.png"
+
+            if(imgCurrentSrc==src1){
+                document.getElementById('logo').src = src2;
+            } else
+            {
+                document.getElementById('logo').src=src1;
+            }
+        }
+
+        document.getElementById('logoSwitch').addEventListener('click', switchLogo);
+    </script>
+</body>
+</html>

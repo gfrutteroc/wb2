@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ARRAYS</title>
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>WHICH CAR WOULD YOU LIKE TO TEST?</h1>
+
+        <form action="" method="POST">
+            <label for="carMake" id="carMake">CAR MAKE</label>
+            
+            <select name="make" id="carMake">
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="merc">Mercedes</option>
+                <option value="porsche">Porsche</option>
+            </select>
+            <label for="carModel">Model</label>
+            <select name="model" id="carModel"></select>
+        </form>
+    </main>
+
+    <script>
+        var audiModels          = ["S3","S5","S7"];
+        var bmwModels           = ["Series-3","Series-4","Series-5","Series-7"];
+        var mercedesModels      = ["C-class","E-class","S-Class"];
+        var porscheModels       = ["911","Macan","Panamera","Cayenne"];
+
+        var makeDropDown = document.getElementById("carMake");
+        var modelDropDown = document.getElementById("carModel");
+
+        makeDropDown.addEventListener('change', function(){
+
+            console.log(this.value);
+
+            modelDropDown.innerHTML = "";
+
+            for(var i = 0; i < bmwModels.length; i++){
+                console.log(i);
+                modelDropDown.innerHTML += '<option value="'+ bmwModels[i] +'">' + bmwModels[i] + '</option>';
+
+            }
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("nav").slideToggle()[200];
+              });
+            });
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+    </script>
+</head>
+<body>
+    <!-- <header> -->
+        <div class="container">
+            <div class="floater-section small-width-100 med-width-100 large-width-100">
+                    <div id="logo">
+                            <img src="http://dawgsquad.org/wp-content/uploads/2018/06/DawgSquadRGBnobackground.png" alt="The Dawg Squad"><a href="home.html"></a>
+
+                    </div>
+                    
+                    <nav>
+                            <ul>
+                                <li>Our Dawg Squad</li>
+                                <li>About Us</li>
+                                <li>Donate</li>
+                                <li>Blog</li>
+                            </ul>
+                    </nav>
+                    <button>&#9776;</button>
+                    <div class="clearfix"></div>
+            </div> 
+            <div class="floater-section small-width-100 med-width-100 large-width-100 imageGallery title">
+            <h1>Our Dawg Squad</h1>
+            </div>
+            <div class="floater-section small-width-100 med-width-100 large-width-100 imageGallery">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg" style="width:100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <!-- Image text -->
+                        <div class="caption-container">
+                        <p id="caption"></p>
+                        </div>
+
+                        <!-- Thumbnail images -->
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/09/dog-landing-hero-sm.jpg?bust=1536935086" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                        </div>
+                        <div class="column"> 
+                            <img class="demo cursor" src="https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/09/dog-landing-hero-sm.jpg?bust=1536935086" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/09/dog-landing-hero-sm.jpg?bust=1536935086" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/09/dog-landing-hero-sm.jpg?bust=1536935086" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/09/dog-landing-hero-sm.jpg?bust=1536935086" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                        </div> 
+                        <div class="column">
+                            <img class="demo cursor" src="https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/09/dog-landing-hero-sm.jpg?bust=1536935086" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                        </div>
+                    </div>
+                                    
+
+                
+                    <h1>I'm box placement</h1>
+                        
+                    </div>
+            </div>
+        </div>
+        
+       
+    <!-- </header> -->
+    
+    
+    
+    <main></main>
+    
+</body>
+</html>
