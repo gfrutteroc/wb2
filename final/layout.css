@@ -1,18 +1,19 @@
 .container {
-    display: flex;
+    margin: auto;
 }
 .floater-section{
     float: left;
     width: 100%;
     min-height: 8px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px;
+    margin-right: 10px; */
 }
-.col {
+/* .col {
     flex: 1;
-}
-@media (min-width: 450px){
+} */
+@media (min-width: 360px){
     .container{
-        width: 440px;
+        width: 100%;
     }
     .floater-section{
         width: 50%;
@@ -39,7 +40,7 @@
 
 @media (min-width: 768px){
     .container {
-        width: 760px;
+        width: 100%;
     }
     .floater-section{
         width: 33.33%
@@ -66,13 +67,13 @@
 }
 @media (min-width:1000px){
     .container{
-        width: 960px;
+        width: 100%;
     }
     .floater-section{
-        width: 24%;
+        width: 25%;
     }
     .large-width-25{
-        width: 24%;
+        width: 25%;
     }
     .large-width-33{
         width: 33.33%;
